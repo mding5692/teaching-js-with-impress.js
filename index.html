@@ -7,14 +7,65 @@
     <title>Creating Web Apps with Javascript in a couple slides</title>
     <meta name="description" content="Teaching people how to use Javascript to create web applications in a presentation made with Impress.js" />
     <meta name="author" content="Michael Ding" />
-    <!-- Impress.js library -->
-    <script src="http://impress.github.io/impress.js/js/impress.js"></script>
     <link href="./css/style.css" rel="stylesheet">
   </head>
-  <body>
-    
-    
-    
-    
-  </body>
+ <body class="impress-not-supported">
+
+<!--this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q>What is this <b>node.js</b> people talk of?</q>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>The one <b>true dev language?</b></q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>No seriously, want to use a <strong>platform</strong> that enables programming in<strong> javascript</strong> on your computer and is used by companies like <b>Walmart?</b></q>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">then you should try</span>
+        <h1>node.js</h1>
+    </div>
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>It's a <strong>great and mature tool</strong> <br/>
+        that can be downloaded <a href="https://nodejs.org/en/">here</a> <br/>
+        and based on the <strong>Chrome V8 JS engine</strong> in modern browsers.</p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>Don't know how <b>to</b> <span class="thoughts">use Node?</span></p>
+    </div>
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>Just learn<b> javascript</b> and you're fine, Node just runs javascript programs and files on your computer</p>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>one more thing...</p>
+    </div>
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">Download</span> <span class="you">this</span> <span class="noticed">as</span> <span class="its">well</span> <span class="in">its</span> <b>a great starter tool for hackathons</b>in Node</p>
+        <span class="footnote"><a href="https://github.com/sahat/hackathon-starter">It's here</a></span>
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+</div>
+<div class="hint">
+      <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="http://impress.github.io/impress.js/js/impress.js"></script>
+<script>impress().init();</script>
+</body>
 </html>
